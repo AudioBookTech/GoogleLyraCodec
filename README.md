@@ -10,14 +10,5 @@ The "vaudio_lyra_Windows" folder contains the binary files for Windows: vaudio_l
 The "Lyra_Android" folder contains the binary files for Android: decoder_main, encoder_main, liblyra_decoder.so, liblyra_encoder.so from the Google Lyra project (https://github.com/google/lyra).
 
 Now, except the vaudio_lyra.dll, the Lyra codec **will not work** without its neural network model weights. Due to GitHub's file size limits and repository hygiene, you need to provide these files yourself:
-1. Download the `.tflite` model files and configuration from the official repositories:
-   * Standard models can be found in the Google Lyra Repository (https://github.com/google/lyra/tree/main/lyra/model_coeffs).
-2. Create a folder named `model_coeffs` in the same directory as your executable.
-3. Place the downloaded `.tflite` and `.proto` files into that `model_coeffs` folder.
-
-Your local directory structure should look like this:
-├── encoder_main.exe (or decoder_main)
-└── model_coeffs/
-    ├── lyra_config.proto
-    ├── soundstream_encoder.tflite
-    └── [other .tflite files...]
+1. Download the "model_coeffs" folder with model files from the official repository (https://github.com/google/lyra/tree/main/lyra/model_coeffs).
+2. Place the folder named "model_coeffs" in the same directory as your executable.
