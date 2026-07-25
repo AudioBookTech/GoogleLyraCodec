@@ -1,5 +1,5 @@
 # GoogleLyraCodec
-Storage of binary files for the Google Lyra Codec.
+Compiled Google Lyra codec binaries.
 
 Google Lyra is a high-quality, low-bitrate speech codec that makes possible significantly better compression of audiobooks than MP3 and Ogg Vorbis.
 
